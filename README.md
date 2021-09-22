@@ -1,70 +1,36 @@
-# Getting Started with Create React App
+# App Summary
+Hoop Up is an app where hoopers can plan a time and place for them and their friends to play pickup basketball
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# MVP
 
-## Available Scripts
+## App Functionality
 
-In the project directory, you can run:
+-App will allow users to create an account
+-App will allow users to sign into their account
+-App will allow users to create, edit, and delete events
+-Users will be able to invite other users to events
+-App will display all upcoming events the user has created
+-App will display event info for each event (date, time, location, everyone who is attending, and type of event)
+-User Experience
+-User will be able to create an account
+-User will be able to sign into their account
+-User will be able to create, edit, and delete events
+-User will be able to invite other users to their event
+-User will be able to view upcoming events, and all of the information associated with each event (date, time, location, everyone who is attending, and type of event)
 
-### `npm start`
+## Future Functionality
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+-Search for other users and add them as friends (like Facebook)
+-Users will be able to connect their Facebook account to invite friends to events
+-Notifications about invites from friends
+-User will be able to add events to their calendar on their phone so they will get a notification about the event when it gets closer
+-Users will be able to create teams with their friends
+-Users can search for other teams and view their stats like W-L
+-Register for 5v5, 3v3, 2v2, and 1v1 tournaments
+-Search for public events
+-Browse events by event type
+-Add a ranking system that ranks teams based on W-L ratio # hoopers-assemble
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+## Database Model
 
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+![Screen Shot 2021-09-01 at 5 29 53 PM](https://user-images.githubusercontent.com/84351563/134425143-bd493cca-9e73-4554-862a-346761bc0f86.png)
