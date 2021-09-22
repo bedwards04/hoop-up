@@ -31,6 +31,6 @@ Hoop Up is an app where hoopers can plan a time and place for them and their fri
 - Browse events by event type
 - Add a ranking system that ranks teams based on W-L ratio # hoopers-assemble
 
-## Database Model
+# Database Model
 
 ![Screen Shot 2021-09-01 at 5 29 53 PM](https://user-images.githubusercontent.com/84351563/134425143-bd493cca-9e73-4554-862a-346761bc0f86.png)
