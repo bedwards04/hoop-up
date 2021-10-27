@@ -1,10 +1,10 @@
 import React from 'react';
+import './register.css'
 
 function Register() {
     return (
         <div>
-            <h1>Hoop Up</h1>
-            <form action="">
+            <form action="submit" id="register">
                 <h2>Register</h2>
                 <input type="text" placeholder='First Name' />
                 <input type="text" placeholder='Last Name' />
