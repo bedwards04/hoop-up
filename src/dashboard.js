@@ -1,22 +1,22 @@
 import React from 'react';
-
+import './dashboard.css'
 
 
 function Dashboard() {
     return (
         <div>
-            <header>
+            <header id="dashboard-header">
+                <img src="./bell.png" alt="notification bell" className="header-icon"/>
                 <h1>Dashboard</h1>
-                <img src="./user.png" alt="user icon" />
-                <img src="./bell.png" alt="" />
+                <img src="./user.png" alt="user" className="header-icon"/>
             </header>
 
-            <main>
-                <h2>You don't have any scheduled events</h2>
-                <h2>Create new event</h2> {/*clicking on this will bring the user to the create new event form. Also, don't forget to unbold the font. */}
+            <main id="dashboard">
+                <h2 id="events-title">You don't have any scheduled events</h2>
+                <button id="new-event-button">Create new event</button>
             </main>
             
-            <footer>
+            <footer id="footer">
                 <div>Icons made by <a href="https://www.flaticon.com/authors/ghufronagustian" title="ghufronagustian">ghufronagustian</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div> 
 
                 <div>Icons made by <a href="https://creativemarket.com/Becris" title="Becris">Becris</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div>
