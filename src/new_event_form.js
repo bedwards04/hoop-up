@@ -1,11 +1,11 @@
 import React from 'react';
+import './new_event_form.css'
 
-//this is going to be a form 
 function NewEvent() {
     return (
         <div>
             <div>
-                <form action="">
+                <form action="" id="new-event-form">
                     <h2>New Event</h2>
                     <input type="text" placeholder="Title"/>
                     <select name="types of events" id="types of events">
