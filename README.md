@@ -33,12 +33,12 @@ Hoop Up is an app where hoopers can plan a time and place for them and their fri
 
 # Wireframes
 
-<img width="691" alt="Screen Shot 2021-11-09 at 5 28 14 PM" src="https://user-images.githubusercontent.com/84351563/141027489-847be831-12d9-4b10-a692-dcae10897139.png">
-<img width="692" alt="Screen Shot 2021-11-09 at 5 28 40 PM" src="https://user-images.githubusercontent.com/84351563/141027520-5bb01ba3-2156-4f19-b259-b4fcd6146a8a.png">
-<img width="414" alt="Screen Shot 2021-11-09 at 5 32 07 PM" src="https://user-images.githubusercontent.com/84351563/141028256-3d9e6487-48ea-4858-b6b2-35ed6aeb0fbe.png">
-<img width="470" alt="Screen Shot 2021-11-09 at 5 29 31 PM" src="https://user-images.githubusercontent.com/84351563/141028296-112f88e1-3e2a-4599-88f2-b3d9e9aea7f2.png">
-<img width="531" alt="Screen Shot 2021-11-09 at 5 38 16 PM" src="https://user-images.githubusercontent.com/84351563/141028303-ff5df9d5-201d-49c5-b803-486ae65dcebe.png">
-<img width="469" alt="Screen Shot 2021-11-09 at 5 30 01 PM" src="https://user-images.githubusercontent.com/84351563/141028308-d2178329-fc1f-4620-b8ee-4fad557b0b7c.png">
+<img width="622" alt="Screen Shot 2021-11-10 at 8 32 40 AM" src="https://user-images.githubusercontent.com/84351563/141142999-b5eb9000-b12b-417b-beaf-32955735728a.png">
+<img width="622" alt="Screen Shot 2021-11-10 at 8 33 01 AM" src="https://user-images.githubusercontent.com/84351563/141143027-d2b0fb94-4131-4b0a-b31d-892718243751.png">
+<img width="622" alt="Screen Shot 2021-11-10 at 8 33 16 AM" src="https://user-images.githubusercontent.com/84351563/141143055-510bdb51-711e-4474-aa34-835445d3f16b.png">
+<img width="622" alt="Screen Shot 2021-11-10 at 8 33 27 AM" src="https://user-images.githubusercontent.com/84351563/141143079-3bfa509e-2a4f-46ce-83c7-d803807eb435.png">
+<img width="622" alt="Screen Shot 2021-11-10 at 8 33 40 AM" src="https://user-images.githubusercontent.com/84351563/141143105-cec616f8-3e8b-43f0-bc6a-d7ad3bb76e6d.png">
+<img width="622" alt="Screen Shot 2021-11-10 at 8 33 53 AM" src="https://user-images.githubusercontent.com/84351563/141143123-3b171097-498a-4e56-8bde-e5315ddee0d9.png">
 
 # Database Model
 
