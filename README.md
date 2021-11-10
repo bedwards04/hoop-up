@@ -31,6 +31,15 @@ Hoop Up is an app where hoopers can plan a time and place for them and their fri
 - Browse events by event type
 - Add a ranking system that ranks teams based on W-L ratio # hoopers-assemble
 
+# Wireframes
+
+<img width="691" alt="Screen Shot 2021-11-09 at 5 28 14 PM" src="https://user-images.githubusercontent.com/84351563/141027489-847be831-12d9-4b10-a692-dcae10897139.png">
+<img width="692" alt="Screen Shot 2021-11-09 at 5 28 40 PM" src="https://user-images.githubusercontent.com/84351563/141027520-5bb01ba3-2156-4f19-b259-b4fcd6146a8a.png">
+<img width="414" alt="Screen Shot 2021-11-09 at 5 32 07 PM" src="https://user-images.githubusercontent.com/84351563/141028256-3d9e6487-48ea-4858-b6b2-35ed6aeb0fbe.png">
+<img width="470" alt="Screen Shot 2021-11-09 at 5 29 31 PM" src="https://user-images.githubusercontent.com/84351563/141028296-112f88e1-3e2a-4599-88f2-b3d9e9aea7f2.png">
+<img width="531" alt="Screen Shot 2021-11-09 at 5 38 16 PM" src="https://user-images.githubusercontent.com/84351563/141028303-ff5df9d5-201d-49c5-b803-486ae65dcebe.png">
+<img width="469" alt="Screen Shot 2021-11-09 at 5 30 01 PM" src="https://user-images.githubusercontent.com/84351563/141028308-d2178329-fc1f-4620-b8ee-4fad557b0b7c.png">
+
 # Database Model
 
 ![Screen Shot 2021-09-01 at 5 29 53 PM](https://user-images.githubusercontent.com/84351563/134425143-bd493cca-9e73-4554-862a-346761bc0f86.png)
