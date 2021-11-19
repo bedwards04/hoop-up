@@ -11,7 +11,9 @@ Hoop Up is an app where hoopers can plan a time and place for them and their fri
 - Users will be able to invite other users to events
 - App will display all upcoming events the user has created
 - App will display event info for each event (date, time, location, everyone who is attending, and type of event)
-- User Experience
+
+## User Experience
+
 - User will be able to create an account
 - User will be able to sign into their account
 - User will be able to create, edit, and delete events
