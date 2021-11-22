@@ -27,11 +27,11 @@ Hoop Up is an app where hoopers can plan a time and place for them and their fri
 - Notifications about invites from friends
 - User will be able to add events to their calendar on their phone so they will get a notification about the event when it gets closer
 - Users will be able to create teams with their friends
-- Users can search for other teams and view their stats like W-L
+- Users can search for other teams and view their stats like W-L ratio
 - Register for 5v5, 3v3, 2v2, and 1v1 tournaments
 - Search for public events
 - Browse events by event type
-- Add a ranking system that ranks teams based on W-L ratio # hoopers-assemble
+- Add a ranking system that ranks teams and individuals based on W-L ratio
 
 # Wireframes
 
