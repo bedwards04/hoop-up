@@ -32,7 +32,8 @@ CREATE TABLE "events" (
   "users_attending" int,
   "users_not_attending" int,
   "invited" int,
-  "user_created_event" int
+  "user_id" int,
+  "public" boolean
 );
 
 CREATE TABLE "users_attending" (
@@ -51,28 +52,32 @@ CREATE TABLE "invitations" (
   "id" SERIAL PRIMARY KEY,
   "user_id" int,
   "message" varchar,
-  "event_id" int
+  "event_id" int,
+  "accepted" boolean,
+  "user_received_id" int
 );
 
-ALTER TABLE "events" ADD FOREIGN KEY ("user_created_event") REFERENCES "users" ("id");
+ALTER TABLE "events" ADD FOREIGN KEY ("user_id") REFERENCES "users" ("id");
+
+ALTER TABLE "events" ADD FOREIGN KEY ("users_attending") REFERENCES "users_attending" ("id");
+
+ALTER TABLE "events" ADD FOREIGN KEY ("invited") REFERENCES "invitations" ("id");
+
+ALTER TABLE "events" ADD FOREIGN KEY ("users_not_attending") REFERENCES "users_not_attending" ("id");
 
 ALTER TABLE "users_attending" ADD FOREIGN KEY ("user_id") REFERENCES "users" ("id");
 
 ALTER TABLE "users_attending" ADD FOREIGN KEY ("event_id") REFERENCES "events" ("id");
 
-ALTER TABLE "events" ADD FOREIGN KEY ("users_attending") REFERENCES "users_attending" ("id");
-
-ALTER TABLE "events" ADD FOREIGN KEY ("users_not_attending") REFERENCES "users_not_attending" ("id");
-
 ALTER TABLE "users_not_attending" ADD FOREIGN KEY ("user_id") REFERENCES "users" ("id");
 
 ALTER TABLE "users_not_attending" ADD FOREIGN KEY ("event_id") REFERENCES "events" ("id");
 
-ALTER TABLE "events" ADD FOREIGN KEY ("invited") REFERENCES "invitations" ("id");
-
 ALTER TABLE "invitations" ADD FOREIGN KEY ("user_id") REFERENCES "users" ("id");
 
 ALTER TABLE "invitations" ADD FOREIGN KEY ("event_id") REFERENCES "events" ("id");
+
+ALTER TABLE "invitations" ADD FOREIGN KEY ("user_received_id") REFERENCES "users" ("id");
 
 
 INSERT INTO users (username,password,first_name,last_name,city,state,preferred_position,bio)
@@ -84,19 +89,19 @@ VALUES
   ('Buckminster Shaw','Oliver Mcmahon','Brielle Gould','Britanney Brewer','Rum','Pınarbaşı','nibh','elit. Aliquam auctor, velit eget laoreet posuere, enim');
 
 
-INSERT INTO events (type,description,location,title,date,start_time,end_time,users_attending,users_not_attending,invited,user_created_event)
+INSERT INTO events (type,description,location,title,date,start_time,end_time,user_id)
 VALUES
-  ('Neville Sexton','morbi tristique senectus et netus et malesuada fames','Leersum','metus. Aliquam erat volutpat. Nulla facilisis. Suspendisse commodo tincidunt','Sep 16, 2022','07:55:42','23:13:42',8,9,7,8),
-  ('Wade Roberson','hendrerit a, arcu. Sed et libero.','Tehuacán','lacinia orci, consectetuer euismod est','May 3, 2021','07:18:35','09:35:02',4,2,2,3),
-  ('Nathaniel Hull','vitae, orci. Phasellus dapibus quam','Jiutepec','sociis natoque','Nov 21, 2020','09:19:57','03:46:16',6,6,3,9),
-  ('Shoshana Vargas','rutrum lorem ac risus.','Singkawang','est','Sep 26, 2022','03:21:21','13:06:00',5,9,7,8),
-  ('Rose Fischer','leo elementum sem, vitae aliquam eros turpis','Neustrelitz','sapien molestie','Jun 26, 2022','04:40:09','17:45:16',6,8,7,8);
+  ('Neville Sexton','morbi tristique senectus et netus et malesuada fames','Leersum','metus. Aliquam erat volutpat. Nulla facilisis. Suspendisse commodo tincidunt','Sep 16, 2022','07:55:42','23:13:42',1),
+  ('Wade Roberson','hendrerit a, arcu. Sed et libero.','Tehuacán','lacinia orci, consectetuer euismod est','May 3, 2021','07:18:35','09:35:02',2),
+  ('Nathaniel Hull','vitae, orci. Phasellus dapibus quam','Jiutepec','sociis natoque','Nov 21, 2020','09:19:57','03:46:16',3),
+  ('Shoshana Vargas','rutrum lorem ac risus.','Singkawang','est','Sep 26, 2022','03:21:21','13:06:00',4),
+  ('Rose Fischer','leo elementum sem, vitae aliquam eros turpis','Neustrelitz','sapien molestie','Jun 26, 2022','04:40:09','17:45:16',5);
 
 
 INSERT INTO invitations (user_id,message,event_id)
 VALUES
-  (4,'morbi tristique senectus et netus et malesuada fames',6),
-  (0,'hendrerit a, arcu. Sed et libero.',4),
-  (0,'vitae, orci. Phasellus dapibus quam',0),
-  (5,'rutrum lorem ac risus.',9),
-  (8,'leo elementum sem, vitae aliquam eros turpis',3);
+  (1,'morbi tristique senectus et netus et malesuada fames',1),
+  (2,'hendrerit a, arcu. Sed et libero.',2),
+  (3,'vitae, orci. Phasellus dapibus quam',3),
+  (4,'rutrum lorem ac risus.',4),
+  (5,'leo elementum sem, vitae aliquam eros turpis',5);
