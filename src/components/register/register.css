@@ -1,8 +1,30 @@
+#court-image {
+  object-fit: fill;
+  position: relative;
+  z-index: 0;
+}
+
 #register {
   border: solid black 1px;
-  height: 400px;
-  width: 400px;
+  background-color: white;
+  height: 350px;
+  width: 500px;
   margin: auto;
-  margin-top: 150px;
-  border-radius: 25px;
+  margin-top: -580px;
+  border-radius: 15px;
+  position: relative;
+  z-index: 1;
+}
+
+input {
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+  margin-top: 1.5rem;
+  width: 200px;
+  height: 20px;
+}
+
+button {
+  margin: 3rem;
 }
