@@ -1,6 +1,5 @@
 #court-image {
-  height: 750px;
-  width: 1280;
+  object-fit: fill;
   position: relative;
   z-index: 0;
 }
@@ -10,25 +9,36 @@
   height: 350px;
   width: 500px;
   margin: auto;
-  margin-top: -550px;
+  margin-top: -580px;
   border: solid black 1px;
   position: relative;
   z-index: 1;
 }
 
+h3 {
+  margin: 0;
+}
+
 #inputs {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.credentials {
+  width: 200px;
+  height: 20px;
+  margin-top: 1.25rem;
+}
+
+#log-in-btn {
+  width: 60px;
+  margin: 2rem;
+  cursor: pointer;
 }
 
 #sign-up {
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
-  margin-top: 50px;
-}
-
-#footer {
-  align-items: flex-end;
-  justify-content: flex-end;
-  position: relative;
-  margin-top: 190px;
 }
