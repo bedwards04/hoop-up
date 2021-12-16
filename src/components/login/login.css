@@ -38,10 +38,20 @@ h3 {
   cursor: pointer;
 }
 
-#sign-up {
+#log-in-btn:hover {
+  opacity: 60%;
+}
+
+#bottom-login {
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
+}
+
+#sign-up:hover {
+  cursor: pointer;
+  opacity: 40%;
+  text-decoration: underline;
 }
 
 footer {
