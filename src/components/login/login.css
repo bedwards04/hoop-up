@@ -42,3 +42,8 @@ h3 {
   flex-direction: row;
   justify-content: space-evenly;
 }
+
+footer {
+  margin-top: 235px;
+  margin-bottom: 15px;
+}
