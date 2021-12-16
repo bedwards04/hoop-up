@@ -5,12 +5,13 @@
 }
 
 #log-in-box {
+  border: solid black 1px;
   background-color: white;
   height: 350px;
   width: 500px;
   margin: auto;
   margin-top: -580px;
-  border: solid black 1px;
+  border-radius: 15px;
   position: relative;
   z-index: 1;
 }
