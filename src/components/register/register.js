@@ -13,8 +13,8 @@ function Register() {
                 <input type="text" placeholder='Last Name' />
                 <input type="text" placeholder='Username' />
                 <input type="text" placeholder='Password' />
-                <button>cancel</button>
-                <button>continue</button>
+                <button>Cancel</button>
+                <button>Continue</button>
             </form>
         </div>
     );
