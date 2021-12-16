@@ -15,9 +15,9 @@ function Login() {
                     <input type="password" placeholder='Password' className='credentials' />
                     <input type="submit" value="Log In" id='log-in-btn' />
                 </form>
-                <section id="sign-up">
+                <section id="bottom-login">
                     <h4>Don't have an account?</h4>
-                    <h4>Sign Up</h4>
+                    <h4 id='sign-up'>Sign Up</h4>
                 </section>
             </div>
             <footer> 
