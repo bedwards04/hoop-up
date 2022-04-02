@@ -16,7 +16,7 @@
   z-index: 1;
 }
 
-input {
+.register-field {
   display: flex;
   flex-direction: column;
   margin: auto;
@@ -25,6 +25,7 @@ input {
   height: 20px;
 }
 
-button {
-  margin: 3rem;
+.register-btns {
+  margin: 2.5rem;
+  cursor: pointer;
 }
