@@ -22,6 +22,7 @@ function NewEvent(props) {
         axios.post('http://localhost:4550/api/new-event', {userId: props.userId, title, date, startTime, endTime, location, type, publics, description})
         .then((res) => {
             console.log(res)
+            navigate('/dashboard')
         })
         .catch((err) => {
             console.log(err)
