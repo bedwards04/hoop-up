@@ -25,12 +25,12 @@ module.exports = {
     //get all the info, loop over it, and then compare it with a value
     registerNewUser: (req, res) => { 
         const db = req.app.get('db');
-        const {username, password, first_name, last_name} = req.body
+        const {username, password, firstName, lastName} = req.body
 
         const salt = bcrypt.genSaltSync(10);
         const hash = bcrypt.hashSync(password, salt);
 
-        db.register_new_user([username, hash, first_name, last_name]).then(newUser => {
+        db.register_new_user([username, hash, firstName, lastName]).then(newUser => {
             res.status(200).send(newUser)
         }).catch(err => {
             res.status(400).send(err)
@@ -68,9 +68,9 @@ module.exports = {
 
     createNewEvent: (req, res) => {
         const db = req.app.get('db')
-        const {user_id, type, description, location, title, date, start_time, end_time, publics} = req.body;
-
-        db.create_new_event([type, description, location, title, date, start_time, end_time, publics, user_id]).then((newEvent) => {
+        const {userId, title, date, startTime, endTime, location, type, publics, description} = req.body;
+        console.log(userId, title, date, startTime, endTime, location, type, publics, description)
+        db.create_new_event([userId, title, date, startTime, endTime, location, type, publics, description]).then((newEvent) => {
             res.status(200).send(newEvent)
         }).catch(err => {
             res.status(400).send(err)
