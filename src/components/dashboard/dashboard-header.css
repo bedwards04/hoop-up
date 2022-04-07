@@ -1,0 +1,15 @@
+#dashboard-header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.header-icon {
+  height: 40px;
+  width: 40px;
+  margin-top: 20px;
+}
+
+.header-icon:hover {
+  cursor: pointer;
+}
