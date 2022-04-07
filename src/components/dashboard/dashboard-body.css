@@ -1,0 +1,36 @@
+#dashboard {
+  margin-top: 10px;
+  border: solid black 1px;
+  height: 640px;
+  width: 1060px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+
+#events-title {
+  margin-top: 100px;
+}
+
+#new-event {
+  width: 169px;
+  margin: auto;
+  margin-top: 70px;
+  border: none;
+  background-color: white;
+  font-size: 20px;
+}
+
+#new-event:hover {
+  cursor: pointer;
+  opacity: 40%;
+  text-decoration: underline;
+}
+
+footer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
