@@ -1,0 +1,53 @@
+div {
+  border: solid black 1px;
+  border-radius: 15px;
+  height: 700px;
+  width: 550px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+
+#details-header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  margin-top: 35px;
+}
+
+.event-header-btns {
+  border: none;
+  background-color: white;
+  font-size: 25px;
+}
+
+.event-header-btns:hover {
+  cursor: pointer;
+}
+
+#people {
+  opacity: 40%;
+}
+
+.close-button {
+  border: none;
+  background-color: white;
+  font-size: 50px;
+  position: fixed;
+  top: 4px;
+  right: 7px;
+}
+
+.close-button:hover {
+  cursor: pointer;
+}
+
+h4 {
+  margin-bottom: 3rem;
+}
+
+#join-public-event:hover {
+  cursor: pointer;
+}
