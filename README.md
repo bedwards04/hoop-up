@@ -34,16 +34,17 @@ Hoop Up is an app where hoopers can plan a time and place for them and their fri
 
 # Wireframes
 
-<img width="899" alt="Screen Shot 2021-11-19 at 5 31 41 PM" src="https://user-images.githubusercontent.com/84351563/142707562-ca812994-da18-4b4a-ab3c-a332044516aa.png">
-<img width="898" alt="Screen Shot 2021-11-19 at 5 32 03 PM" src="https://user-images.githubusercontent.com/84351563/142707566-ff60193d-c215-4f2e-8ef6-369a8ffd2c89.png">
-<img width="897" alt="Screen Shot 2021-11-19 at 5 32 20 PM" src="https://user-images.githubusercontent.com/84351563/142707593-18eae4d9-5a7e-495f-9f1b-3b3e8e82098b.png">
-<img width="898" alt="Screen Shot 2021-11-19 at 5 32 45 PM" src="https://user-images.githubusercontent.com/84351563/142707606-8af9510d-4483-4a93-afd9-e09d73e4b74f.png">
-<img width="897" alt="Screen Shot 2021-11-19 at 5 33 05 PM" src="https://user-images.githubusercontent.com/84351563/142707624-f6b2a661-aaf5-409b-9bfc-e708374c7bbc.png">
-<img width="897" alt="Screen Shot 2021-11-19 at 5 33 25 PM" src="https://user-images.githubusercontent.com/84351563/142707630-0e246bde-6289-4f8b-92ec-0092e59b6b92.png">
-<img width="898" alt="Screen Shot 2021-11-19 at 5 33 46 PM" src="https://user-images.githubusercontent.com/84351563/142707635-8fda0d65-242c-4e0c-a70c-82b24d77cd9b.png">
-<img width="897" alt="Screen Shot 2021-11-19 at 5 34 09 PM" src="https://user-images.githubusercontent.com/84351563/142707645-c7905d2b-a2ba-47eb-945c-75acbaac3931.png">
-<img width="897" alt="Screen Shot 2021-11-19 at 5 34 25 PM" src="https://user-images.githubusercontent.com/84351563/142707655-40b953aa-f0ed-439a-9221-bef3589ba0fe.png">
+<img width="685" alt="Screen Shot 2022-04-20 at 8 53 51 AM" src="https://user-images.githubusercontent.com/84351563/164260257-5a426070-99e2-43fb-991d-c7b0134d770d.png">
 
+<img width="686" alt="Screen Shot 2022-04-20 at 8 54 08 AM" src="https://user-images.githubusercontent.com/84351563/164260339-8166e866-134e-4e6d-a01c-c66f26ddc62c.png">
+
+<img width="684" alt="Screen Shot 2022-04-20 at 8 54 36 AM" src="https://user-images.githubusercontent.com/84351563/164260397-da377eb9-707b-4d63-b093-4bb9aaa3de11.png">
+
+<img width="686" alt="Screen Shot 2022-04-20 at 8 54 50 AM" src="https://user-images.githubusercontent.com/84351563/164260435-a8c728e0-d1b2-4cd7-9b70-a510a51910be.png">
+
+<img width="685" alt="Screen Shot 2022-04-20 at 8 55 06 AM" src="https://user-images.githubusercontent.com/84351563/164260480-f1c8ee1e-d17b-4725-8a6e-6f86a8e8aad2.png">
+
+<img width="686" alt="Screen Shot 2022-04-20 at 8 55 22 AM" src="https://user-images.githubusercontent.com/84351563/164260526-f1b474d2-c71f-4f65-9dc4-e77ac28e1c11.png">
 
 # Database Model
 
