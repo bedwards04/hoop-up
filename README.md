@@ -34,18 +34,17 @@ Hoop Up is an app where hoopers can plan a time and place for them and their fri
 
 # Wireframes
 
-<img width="685" alt="Screen Shot 2022-04-20 at 8 53 51 AM" src="https://user-images.githubusercontent.com/84351563/164260257-5a426070-99e2-43fb-991d-c7b0134d770d.png">
+![Screen Shot 2022-04-20 at 9 12 56 AM](https://user-images.githubusercontent.com/84351563/164264078-2ecfbac5-4e20-440f-b8c0-1a41a371c2d3.png)
 
-<img width="686" alt="Screen Shot 2022-04-20 at 8 54 08 AM" src="https://user-images.githubusercontent.com/84351563/164260339-8166e866-134e-4e6d-a01c-c66f26ddc62c.png">
+![Screen Shot 2022-04-20 at 9 13 08 AM](https://user-images.githubusercontent.com/84351563/164264119-0ac4c0c6-8e49-4ebc-8b56-c6aba277acef.png)
 
-<img width="684" alt="Screen Shot 2022-04-20 at 8 54 36 AM" src="https://user-images.githubusercontent.com/84351563/164260397-da377eb9-707b-4d63-b093-4bb9aaa3de11.png">
+![Screen Shot 2022-04-20 at 9 13 20 AM](https://user-images.githubusercontent.com/84351563/164264150-42450d94-d517-447e-ad74-06df841f7547.png)
 
-<img width="686" alt="Screen Shot 2022-04-20 at 8 54 50 AM" src="https://user-images.githubusercontent.com/84351563/164260435-a8c728e0-d1b2-4cd7-9b70-a510a51910be.png">
+![Screen Shot 2022-04-20 at 9 13 35 AM](https://user-images.githubusercontent.com/84351563/164264191-60c377a3-e02c-4592-b3d5-8b4ade5c5d7e.png)
 
-<img width="685" alt="Screen Shot 2022-04-20 at 8 55 06 AM" src="https://user-images.githubusercontent.com/84351563/164260480-f1c8ee1e-d17b-4725-8a6e-6f86a8e8aad2.png">
+![Screen Shot 2022-04-20 at 9 13 44 AM](https://user-images.githubusercontent.com/84351563/164264218-34158946-4001-48a2-9584-6a60fa61eb5e.png)
 
-![Screen Shot 2022-04-20 at 9 10 45 AM](https://user-images.githubusercontent.com/84351563/164263488-38738ed2-7d46-4df5-83a9-b59fd40b6a23.png)
-
+![Screen Shot 2022-04-20 at 9 13 54 AM](https://user-images.githubusercontent.com/84351563/164264241-9bc3de92-74cb-4af5-9615-e93ddd221c74.png)
 
 # Database Model
 
