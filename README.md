@@ -46,5 +46,6 @@ Hoop Up is an app where hoopers can plan a time and place for them and their fri
 
 # Database Model
 
-![Screen Shot 2022-04-20 at 9 08 32 AM](https://user-images.githubusercontent.com/84351563/164262842-37de5702-9cee-4168-8c2c-29692cab717c.png)
+<img width="740" alt="Screen Shot 2022-04-21 at 8 20 02 PM" src="https://user-images.githubusercontent.com/84351563/164583828-0c88a200-a4a9-4d33-9e97-53b9cf41bff6.png">
+
 
