@@ -14,7 +14,6 @@ function Login(props) {
         axios.post('http://localhost:4550/api/login', {username: username, password: password})
         .then((res) => {
             console.log(res)
-            props.setUserId(res.data.id)
             //navigate to different page
             navigate('/dashboard')
         })
