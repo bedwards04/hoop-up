@@ -6,18 +6,14 @@
 
 -- insert into
 
-DROP TABLE IF EXISTS "users", "events", "users_attending", "users_not_attending", "invitations";
+DROP TABLE IF EXISTS "users", "events";
 
 CREATE TABLE "users" (
   "id" SERIAL PRIMARY KEY,
   "username" varchar,
   "password" varchar,
   "first_name" varchar,
-  "last_name" varchar,
-  "city" varchar,
-  "state" varchar,
-  "preferred_position" varchar,
-  "bio" varchar
+  "last_name" varchar
 );
 
 CREATE TABLE "events" (
@@ -29,56 +25,10 @@ CREATE TABLE "events" (
   "date" date,
   "start_time" time,
   "end_time" time,
-  "users_attending" int,
-  "users_not_attending" int,
-  "invited" int,
-  "user_id" int,
-  "public" boolean
-);
-
-CREATE TABLE "users_attending" (
-  "id" SERIAL PRIMARY KEY,
-  "event_id" int,
   "user_id" int
-);
-
-CREATE TABLE "users_not_attending" (
-  "id" SERIAL PRIMARY KEY,
-  "event_id" int,
-  "user_id" int
-);
-
-CREATE TABLE "invitations" (
-  "id" SERIAL PRIMARY KEY,
-  "user_id" int,
-  "message" varchar,
-  "event_id" int,
-  "accepted" boolean,
-  "user_received_id" int
 );
 
 ALTER TABLE "events" ADD FOREIGN KEY ("user_id") REFERENCES "users" ("id");
-
-ALTER TABLE "events" ADD FOREIGN KEY ("users_attending") REFERENCES "users_attending" ("id");
-
-ALTER TABLE "events" ADD FOREIGN KEY ("invited") REFERENCES "invitations" ("id");
-
-ALTER TABLE "events" ADD FOREIGN KEY ("users_not_attending") REFERENCES "users_not_attending" ("id");
-
-ALTER TABLE "users_attending" ADD FOREIGN KEY ("user_id") REFERENCES "users" ("id");
-
-ALTER TABLE "users_attending" ADD FOREIGN KEY ("event_id") REFERENCES "events" ("id");
-
-ALTER TABLE "users_not_attending" ADD FOREIGN KEY ("user_id") REFERENCES "users" ("id");
-
-ALTER TABLE "users_not_attending" ADD FOREIGN KEY ("event_id") REFERENCES "events" ("id");
-
-ALTER TABLE "invitations" ADD FOREIGN KEY ("user_id") REFERENCES "users" ("id");
-
-ALTER TABLE "invitations" ADD FOREIGN KEY ("event_id") REFERENCES "events" ("id");
-
-ALTER TABLE "invitations" ADD FOREIGN KEY ("user_received_id") REFERENCES "users" ("id");
-
 
 INSERT INTO users (username,password,first_name,last_name,city,state,preferred_position,bio)
 VALUES
