@@ -1,0 +1,33 @@
+#edit-event-form {
+    border: solid black 1px;
+    height: 700px;
+    width: 550px;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+  }
+  
+  .edit-event-field {
+    width: 200px;
+    height: 20px;
+    margin: auto;
+    margin-bottom: 1.25rem;
+  }
+  
+  #description {
+    margin: auto;
+    height: 60px;
+    width: 250px;
+  }
+  
+  .edit-event-btns {
+    margin: 2.5rem;
+    width: 60px;
+    cursor: pointer;
+  }
+  
