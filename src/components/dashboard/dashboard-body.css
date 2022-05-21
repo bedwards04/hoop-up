@@ -10,17 +10,18 @@
   transform: translate(-50%, -50%);
 }
 
-#events-title {
-  margin-top: 100px;
+#event-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
 }
 
 #new-event {
-  width: 169px;
-  margin: auto;
-  margin-top: 70px;
-  border: none;
+  position: relative;
+  top: -45px;
+  right: -495px;
   background-color: white;
-  font-size: 20px;
+  font-size: 25px;
 }
 
 #new-event:hover {
