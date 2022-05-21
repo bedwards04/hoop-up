@@ -1,23 +1,50 @@
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
+import {GrAdd} from 'react-icons/gr'
 import './dashboard-body.css';
 import DashboardHeader from './Dashboard-header';
+import { useEffect, useState } from 'react';
+import axios from 'axios';
+import Event from './Event';
 
 function DashboardBody() {
     let navigate = useNavigate();
+    const [event, setEvent] = useState([])
+    // const [eventCreated, setEventCreated] = useState(false);
 
+    useEffect(() => {
+        axios.get('/api/events').then((res) => {
+            setEvent(res.data)
+            // console.log(res.data[0].id)
+            console.log(res.data)
+            // setEventCreated(true)
+        })
+    }, [])
+    
     function renderNewEventForm() {
         navigate('/newevent');
     }
 
+    let eventList = event.map(event => {
+        return <Event event={event}/>
+    })
+
     return (
         <div>
-            <DashboardHeader />
+            <header>
+                <DashboardHeader />
+            </header>
+
 
             <main id="dashboard">
-                <h2 id="events-title">You don't have any scheduled events</h2>
-                <button id="new-event" onClick={renderNewEventForm}>Create new event</button>
+                <h2 id="events-title">Events</h2>
+                <GrAdd id="new-event" onClick={renderNewEventForm}/>
+                <div id='event-container'>
+                    {event && eventList}
+                </div>
             </main>
+
+
 
             <footer id="footer">
                 <div>
