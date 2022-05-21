@@ -12,14 +12,13 @@ function NewEvent(props) {
     const [endTime, setEndTime] = useState('');
     const [location, setLocation] = useState('');
     const [type, setType] = useState('');
-    const [publics, setPublics] = useState('');
     const [description, setDescription] = useState('');
     
 
 
     function handleSubmit(e) {
         e.preventDefault();
-        axios.post('http://localhost:4550/api/new-event', {userId: props.userId, title, date, startTime, endTime, location, type, publics, description})
+        axios.post('http://localhost:4550/api/new-event', {userId: props.userId, title, date, startTime, endTime, location, type, description})
         .then((res) => {
             console.log(res)
             navigate('/dashboard')
@@ -57,10 +56,6 @@ function NewEvent(props) {
         setEndTime(e.target.value)
     }
 
-    function handlePublics(e) {
-        setPublics(e.target.value)
-    }
-
     function returnToDashboard() {
         navigate('/dashboard');
     }
@@ -92,13 +87,6 @@ function NewEvent(props) {
                     <option value="5v5">5v5</option>
                     <option value="3v3">3v3</option>
                     <option value="1v1">1v1</option>
-                </select>
-
-                <label htmlFor="public-or-private">Public or Private</label>
-                <select name="public or private" className='new-event-field' id="public-or-private" onChange={handlePublics} required>
-                    <option value="" disabled selected hidden>Choose one</option>
-                    <option value="true">Public</option>
-                    <option value="false">Private</option>
                 </select>
 
                 <label htmlFor="description">Description</label>
