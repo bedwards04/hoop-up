@@ -37,29 +37,10 @@ module.exports = {
         })
     },
 
-    //dashboard
-    //“your events” are ones that you create, and the ones that you say you’re attending.
-    /*there has to be more logic in this function. Something like:
-    if user created event then show that event in "your events."
-    */
-    getYourEvents: async (req, res) => {
-        const db = req.app.get('db');
-        const {user_id} = req.body
-        const getEventId = await db.get_event_id([user_id])
-        let events = await db.get_your_events([user_id])
-        const addObj = getEventId.map(async (obj) => {
-            const [event] = await db.get_event_title_by_id(obj.event_id)
-            events.push(event)
-        })
-        return Promise.all(addObj).then(() => {
-            res.status(200).send(events)
-        })
-    },
-
-    getPublicEvents: (req, res) => {
+    getEvents: (req, res) => {
         const db = req.app.get('db');
 
-        db.get_public_events().then(event => {
+        db.get_events().then(event => {
             res.status(200).send(event)
         }).catch(err => {
             res.status(400).send(err)
@@ -68,9 +49,9 @@ module.exports = {
 
     createNewEvent: (req, res) => {
         const db = req.app.get('db')
-        const {userId, title, date, startTime, endTime, location, type, publics, description} = req.body;
-        console.log(userId, title, date, startTime, endTime, location, type, publics, description)
-        db.create_new_event([userId, title, date, startTime, endTime, location, type, publics, description]).then((newEvent) => {
+        const {userId, title, date, startTime, endTime, location, type, description} = req.body;
+        console.log(userId, title, date, startTime, endTime, location, type, description)
+        db.create_new_event([userId, title, date, startTime, endTime, location, type, description]).then((newEvent) => {
             res.status(200).send(newEvent)
         }).catch(err => {
             res.status(400).send(err)
@@ -78,11 +59,12 @@ module.exports = {
     },
 
     editEvent: (req, res) => {
+        console.log('hit server')
         const db = req.app.get('db')
         const {event_id} = req.params
-        const {type, description, location, title, date, start_time, end_time, publics} = req.body
+        const {title, date, startTime, endTime, location, type, description} = req.body
 
-        db.edit_event_by_id([type, description, location, title, date, start_time, end_time, publics, event_id]).then(event => {
+        db.edit_event_by_id([title, date, startTime, endTime, location, type, description, event_id]).then(event => {
             res.status(200).send(event)
         }).catch(err => {
             res.status(400).send(err)
@@ -97,61 +79,6 @@ module.exports = {
             res.sendStatus(200)
         }).catch(err => {
             res.status(400).send(err)
-        })
-    },
-
-    //event details and invitations
-
-    getEventDetails: (req, res) => {
-        const db = req.app.get('db');
-        const {event_id} = req.params
-
-        db.get_event_details([event_id]).then(event => {
-            res.status(200).send(event)
-        })
-    },
-
-    //this function will get users when a user is searching for people to invite
-    getUsers: (req, res) => {
-        const db = req.app.get('db')
-        const {username} = req.body
-
-        db.get_users([username]).then(username => {
-            res.status(200).send(username)
-        })
-    },
-
-    addInvitation: async (req, res) => {
-        const db = req.app.get('db');
-        const {event_id, user_id, username} = req.body
-        const [getUserId] = await db.get_user_id([username])
-        const [getName] = await db.get_name_by_id([user_id])
-        const [getEventTitle] = await db.get_event_title_by_id([event_id])
-        const message = `${getName.first_name} ${getName.last_name} has invited you to ${getEventTitle.title}`
-
-        db.add_invitation([user_id, message, event_id, getUserId.id]).then(invite => {
-            res.status(200).send(invite)
-        })
-    },
-
-    getInvitations: (req, res) => {
-        const db = req.app.get('db')
-        const {user_id} = req.body
-
-        db.get_invitations([user_id]).then(invite => {
-            res.status(200).send(invite)
-        })
-    },
-
-//? do we write a get request, for example, to update the "your events" view in the app?
-//? if accepted equals true then invoke getYourEvents? Is that how that would work? 
-    acceptInvite: (req, res) => {
-        const db = req.app.get('db')
-        const {invite_id} = req.params
-        const {accepted} = req.body
-// ? since we're updating the "your events" won't I have to reference getYourEvents?
-        db.accept_invitation([accepted, invite_id]).then(event => {
-            res.status(200).send(event)
         })
     }
 }
